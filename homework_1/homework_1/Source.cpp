@@ -64,7 +64,8 @@ void String::AddStr(const char* addStr)
 
 void String::InsertSymb(int index, char symbol)
 {
-	if (index < 0 || index >= size) {
+	if (index < 0 || index >= size)
+	{
 		cout << "This position is empty" << endl;
 		return;
 	}
@@ -86,7 +87,8 @@ void String::InsertSymb(int index, char symbol)
 
 void String::AsciiStr()//7
 {
-	for (int i = 0; i < size - 1; ++i) {
+	for (int i = 0; i < size - 1; ++i) 
+	{
 		cout << str[i] << " = " << (int)str[i] << " ";
 	}
 	cout << endl;
@@ -94,19 +96,19 @@ void String::AsciiStr()//7
 
 void String::UpperR()
 {
-	for (int i = 0; i < size; ++i) {
-		if (str[i] >= 97 && str[i] <= 122) {
+	for (int i = 0; i < size; ++i)
+	{
+		if (str[i] >= 97 && str[i] <= 122) 
 			str[i] = str[i] - 32;
-		}
 	}
 }
 
 void String::LowerR()
 {
-	for (int i = 0; i < size; ++i) {
-		if (str[i] >= 65 && str[i] <= 90) {
+	for (int i = 0; i < size; ++i) 
+	{
+		if (str[i] >= 65 && str[i] <= 90) 
 			str[i] = str[i] + 32;
-		}
 	}
 }
 
